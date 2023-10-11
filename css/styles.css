@@ -174,7 +174,7 @@
 
 .preview {
   padding-top: 100px;
-  background-image: url(/img/bgc.png);
+  background-image: url(..//img/bgc.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
