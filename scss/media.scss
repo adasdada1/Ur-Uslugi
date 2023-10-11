@@ -1,0 +1,257 @@
+@media(max-width:1300px){//НЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬНЕ ЗАБУДЬ УБРАТЬ
+    .personal__cards{
+        justify-content: center;
+    }
+    .personal__item{
+        display: inline-block;
+    }
+    .personal__item ~ .personal__item{
+        display: none;
+    }
+    .materials__cards{
+        justify-content: center;
+    }
+    .materials__item{
+        display: inline-block;
+    }
+    .materials__item ~ .materials__item{
+        display: none;
+    }
+    .materials__item_description{
+        text-align: center;
+    }
+}
+
+
+
+@media(max-width:1000px){
+    .books{
+        &__right{
+            display: none;
+            
+        }
+        &__left{
+            max-width: inherit;
+            margin: 0;
+            flex-basis: 100%;
+        }
+    }
+    .footer{
+        &__item{
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 835px){
+   
+    .header {
+
+		// .header__top
+
+		&__top {
+		}
+
+		// .header__top-contact
+
+		&__top-contact {
+		}
+
+		// .header__top-about
+
+		&__top-about {
+            font-size: 14px;
+		}
+
+		// .header__top-phone
+
+		&__top-phone {
+		}
+
+		// .header__bottom
+        
+		&__bottom {
+            &_burger{
+                display: block;
+            }
+		}
+
+		// .header__bottom-flex
+
+		&__bottom-flex {
+         
+		}
+
+		// .header__bottom-logo
+
+		&__bottom-logo {
+            h1{   //100vw= 835px. 1vw=8,35px.(835/100) 28px = 3,35vw(28/8,35)
+                font-size: clamp(22px,3.35vw,28px);
+            }
+            p{
+                font-size: clamp(16px,2.4vw,20px);
+            }
+		}
+
+		// .header__bottom-nav
+
+		&__bottom-nav {
+            display: none;
+			// .header__bottom-nav_item
+
+			&_item {
+			}
+		}
+}
+
+.preview {
+    h2{
+        font-size: clamp(30px,6vw,50px);
+    }
+    h3{
+        font-size: clamp(18px,2.9vw,24px);
+    }
+    p{
+        font-size: clamp(16px,2.15vw,18px);
+    }
+    // .preview__text
+
+    &__text {
+    }
+}
+
+.uslugi{
+    
+    &__cards{
+        grid-template: 1fr/1fr 1fr;
+    }
+    &__card{
+        padding: 10px 35px 55px;
+    }
+    h3{
+        font-size: clamp(20px,2.87vw,24px);
+    }
+    &__description{
+        font-size: clamp(14px,1.9vw,16px);
+    }
+    &__card-description{
+        font-size: 14px;
+    }
+}
+
+.otzivi__title{
+    font-size:clamp(20px,3vw,28px);
+    &::after{
+        width: 50px;
+    }
+}
+
+
+.footer{
+    &__info{
+        gap: 40px;
+    }
+    &__list{
+        gap: 0px;
+    }
+   &__urist{
+    max-width: 424px;
+   }
+   &__description{
+    display: none;
+   }
+}
+
+
+
+
+
+}
+
+
+@media(max-width:600px){
+    .uslugi{
+        &__cards{
+            display: block;
+        }
+    &__card{
+        display: inline-block;
+        width: 100%;
+    }
+    &__card ~ &__card{
+        // grid-template: 1fr/1fr;
+        display: none;
+    }
+
+    
+}
+.otzivi__item{
+    display: inline-block;
+    margin-right: 0;
+}
+.otzivi__item ~ .otzivi__item{
+    display: none;
+}
+
+.otzivi__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+    
+        }
+    }
+    .footer{
+        &__list{
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        &__info{
+            gap: 16px;
+        }
+        &__item:nth-child(3){
+            margin-left: 0;
+        }
+    }
+}
+
+
+@media(max-width:510px){
+    .mail{
+        display: none;
+    }
+    .books{
+        &__left{
+            &_buttons{
+                flex-direction: column;
+                gap: 24px;
+                .button{
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+    
+    .footer{
+        &__bottom{
+        &_flex{
+            flex-direction: column;
+            justify-content: center;
+            div{
+                margin: 0 auto;
+            }
+        }
+    }
+    }
+
+}
+@media(max-width:390px){
+    .main-flex{
+        padding-top: 20px;
+    }
+    
+}
