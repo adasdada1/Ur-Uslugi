@@ -34,7 +34,7 @@ b
   background-color: #fff;
   outline: 3px solid #4F8FF0;
   -webkit-transition: 0.5s 0.1s ease-in-out;
-  transition: 0.5s 0.1s ease-in-out;
+  transition: 0.499999s 0.1s ease-in-out;
 }
 .button:hover a {
   color: #4F8FF0;
