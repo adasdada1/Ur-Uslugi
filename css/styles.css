@@ -144,7 +144,7 @@
 
 .tel {
   padding-left: 23px;
-  background-image: url(..//img/phone.svg);
+  background-image: url(/Ur-Uslugi/img/phone.svg);
   background-repeat: no-repeat;
   margin-right: 20px;
   background-position-y: 1px;
@@ -152,7 +152,7 @@
 
 .mail {
   padding-left: 26px;
-  background-image: url(..//img/mail.svg);
+  background-image: url(/Ur-Uslugi/img/mail.svg);
   background-repeat: no-repeat;
   background-position-y: 2px;
 }
